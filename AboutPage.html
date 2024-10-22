@@ -1,0 +1,32 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About</title>
+</head>
+<body>
+    <header>
+        <h1>Bryan's Café</h1>
+        <nav>
+            <a href="index.html">About</a>
+            <a href="Menu.html">Menu</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2>About Us</h2>
+        <p>Welcome to Bryan's Café! We serve delicious meals and beverages in a cozy atmosphere.</p>
+        <h3>Our History</h3>
+        <p>Founded in 2021, Bryan's Café has become a favorite spot for locals.</p>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Bryan's Café</p>
+    </footer>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

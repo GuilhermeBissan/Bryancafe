@@ -1,0 +1,54 @@
+<!-- Contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <h1>Bryan's Café</h1>
+        <nav>
+            <a href="index.html">About</a>
+            <a href="Menu.html">Menu</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Contact Us</h2>
+        <form id="enquiryForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="subject">Message Subject:</label>
+            <input type="text" id="subject" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <p id="responseMessage"></p>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Bryan's Café</p>
+    </footer>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('responseMessage').textContent = 'Your message has been sent!';
+            this.reset(); // Reset the form fields
+        });
+    </script>
+</body>
+</html>
+

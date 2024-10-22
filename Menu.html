@@ -1,0 +1,44 @@
+<!-- Menu.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Menu</title>
+</head>
+<body>
+    <header>
+        <h1>Bryan's Café</h1>
+        <nav>
+            <a href="index.html">About</a>
+            <a href="Menu.html">Menu</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Our Menu</h2>
+        <h3>Meals</h3>
+        <ul>
+            <li>Beetroot and feta salad - $15.00</li>
+            <li>Sourdough Rye Sandwich - $18.00</li>
+            <li>Spinach Pie and Salad - $20.00</li>
+            <li>Feta pancakes with salad - $19.50</li>
+        </ul>
+        <h3>Beverages</h3>
+        <ul>
+            <li>Coffee and Hot Chocolate - Small: $3.50, Regular: $4.00, Large: $4.50</li>
+            <li>Soda - $3.00</li>
+            <li>Fresh Juice - $6.00</li>
+            <li>Bottled Water - $2.00</li>
+        </ul>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Bryan's Café</p>
+    </footer>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
